@@ -1,0 +1,161 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    margin-bottom: 180px;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+.h2-inline {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.gp-page {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -101px;
+}
+
+.gb-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gb-title {
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.gb-description {
+    font-size: 20px;
+    color: #999;
+}
+
+.gb-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.gb-post {
+    margin-bottom: 50px;
+}
+
+.gb-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.gb-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.gb-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+    height: 101px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.gb-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.pagination {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.gp-buttons {
+    margin: 10px 0 30px;
+}
+
+.gp-buttons button:first-child {
+    margin-right: 10px;
+}
+
+.table {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.table td {
+    max-width: 500px;
+}
+
+.meta-title {
+    font-weight: bold;
+}
+
+.gp-back {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #9d9d9d;
+}
+
+.modal-dialog {
+    width: 450px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body textarea {
+    resize: vertical;
+}
+
+.modal-body img {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group:last-child {
+    margin-bottom: 10px;
+}
+
+.error-label {
+    color: red;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    padding-left: 5px;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .gb-title {
+        font-size: 40px;
+    }
+
+    .gb-description {
+        font-size: 14px;
+    }
+
+    .modal-dialog {
+        width: auto;
+    }
+}
