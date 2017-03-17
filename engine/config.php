@@ -8,9 +8,6 @@ define('LANG_DIR', ROOT_DIR . "/lang");
 //Language settings
 define('LANG', "ru");
 
-//Title meta
-define('TITLE', "Гостевая книга");
-
 //Messages output settings
 define('USER_PAGE_MESSAGES', "10");
 define('ADMIN_PAGE', "messages");

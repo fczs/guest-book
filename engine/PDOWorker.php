@@ -1,6 +1,7 @@
 <?php
 
 require_once($_SERVER["DOCUMENT_ROOT"] . "/engine/config.php");
+require_once(LANG_DIR . '/' . LANG . '.php');
 
 class PDOWorker
 {
@@ -18,7 +19,7 @@ class PDOWorker
             } catch (PDOException $e) {
                 //Writes error message to a log file
                 file_put_contents(ROOT_DIR . '/engine/log/error.log', date("d.m.Y H:i:s") . ": " . $e->getMessage() . "\n", FILE_APPEND);
-                die(DB_CONNECTION_ERROR);
+                die($LANG["DB_CONNECTION_ERROR"]);
             }
         }
         return self::$PDOInstance;

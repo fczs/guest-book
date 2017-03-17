@@ -5,7 +5,7 @@
 <?php include(TEMPLATE_DIR . '/header.php'); ?>
 
 <div class="gb-header">
-    <h1 class="gb-title"><?=MESSAGES_TITLE?></h1>
+    <h1 class="gb-title"><?=$LANG["MESSAGES_TITLE"]?></h1>
 </div>
 
 <div class="row">

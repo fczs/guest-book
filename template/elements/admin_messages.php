@@ -26,7 +26,7 @@ foreach ($tmpMessages as $message): ?>
                         data-id="<?=$message["ID"]?>"
                         data-toggle="tooltip"
                         data-placement="top"
-                        title="<?=PUBLISH_BUTTON?>">
+                        title="<?=$LANG["PUBLISH_BUTTON"]?>">
                     <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                 </button>
             <?php endif; ?>
@@ -37,7 +37,7 @@ foreach ($tmpMessages as $message): ?>
                     data-id="<?=$message["ID"]?>"
                     data-toggle="tooltip"
                     data-placement="top"
-                    title="<?=DELETE_BUTTON?>">
+                    title="<?=$LANG["DELETE_BUTTON"]?>">
                 <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
             </button>
         </td>

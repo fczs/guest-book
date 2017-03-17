@@ -9,32 +9,32 @@ $password1 = $_POST["password1"];
 $password2 = $_POST["password2"];
 $keystring = $_POST["keystring"];
 
-!empty($name) or $error["name"] = EMPTY_FIELD;
+!empty($name) or $error["name"] = $LANG["EMPTY_FIELD"];
 
 if (empty($email)) {
-    $error["email"] = EMPTY_FIELD;
+    $error["email"] = $LANG["EMPTY_FIELD"];
 } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $error["email"] = WRONG_EMAIL;
+    $error["email"] = $LANG["WRONG_EMAIL"];
 } elseif (!empty($users->getUserID($email))) {
-    $error["email"] = ALREADY_REGISTERED;
+    $error["email"] = $LANG["ALREADY_REGISTERED"];
 }
 
 if (empty($password1)) {
-    $error["password1"] = EMPTY_FIELD;
+    $error["password1"] = $LANG["EMPTY_FIELD"];
 } elseif (strlen($password1) < 4) {
-    $error["password1"] = SHORT_PASSWORD;
+    $error["password1"] = $LANG["SHORT_PASSWORD"];
 }
 
 if (empty($password2)) {
-    $error["password2"] = EMPTY_FIELD;
+    $error["password2"] = $LANG["EMPTY_FIELD"];
 } elseif ($password2 != $password1) {
-    $error["password2"] = UNEQUAL_PASSWORD;
+    $error["password2"] = $LANG["UNEQUAL_PASSWORD"];
 }
 
 if (empty($keystring)) {
-    $error["keystring"] = EMPTY_FIELD;
+    $error["keystring"] = $LANG["EMPTY_FIELD"];
 } elseif ($_SESSION['captcha_keystring'] != $keystring) {
-    $error["keystring"] = WRONG_CAPTCHA;
+    $error["keystring"] = $LANG["WRONG_CAPTCHA"];
 }
 
 //unset($_SESSION['captcha_keystring']);

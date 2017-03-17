@@ -6,7 +6,7 @@ html {
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
-    margin-bottom: 180px;
+    margin-bottom: 101px;
 }
 
 h1, h2 {
@@ -24,7 +24,7 @@ h1, h2 {
 .gp-page {
     min-height: 100%;
     height: auto !important;
-    margin: 0 auto -101px;
+    margin: 0 auto;
 }
 
 .gb-header {

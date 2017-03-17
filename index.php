@@ -1,10 +1,10 @@
-<?php require_once($_SERVER["DOCUMENT_ROOT"] . "/engine/Prolog.php"); ?>
+<?php require_once(dirname(__FILE__) . "/engine/Prolog.php"); ?>
 
 <?php include(TEMPLATE_DIR . '/header.php'); ?>
 
     <div class="gb-header">
-        <h1 class="gb-title"><?=INDEX_TITLE?></h1>
-        <p class="lead gb-description"><?=INDEX_SUB_TITLE?></p>
+        <h1 class="gb-title"><?=$LANG["INDEX_TITLE"]?></h1>
+        <p class="lead gb-description"><?=$LANG["INDEX_SUB_TITLE"]?></p>
     </div>
 
     <div class="gp-buttons">
@@ -15,7 +15,7 @@
                     data-target="#Modal_Message"
                 <?php else: ?>
                     data-target="#Modal_Terms"
-                <?php endif; ?>><?=WRITE_MESSAGE_BUTTON?></button>
+                <?php endif; ?>><?=$LANG["WRITE_MESSAGE_BUTTON"]?></button>
     </div>
 
     <div class="row">

@@ -7,13 +7,13 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 
 if (empty($email)) {
-    $error["email"] = EMPTY_FIELD;
+    $error["email"] = $LANG["EMPTY_FIELD"];
 }
 
-if(empty($password)) {
-    $error["password"] = EMPTY_FIELD;
+if (empty($password)) {
+    $error["password"] = $LANG["EMPTY_FIELD"];
 } elseif (!$users->checkPassword($email, $password)) {
-    $error["password"] = WRONG_PASSWORD;
+    $error["password"] = $LANG["WRONG_PASSWORD"];
 }
 
 if (count($error) <= 0) {
