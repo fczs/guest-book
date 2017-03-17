@@ -28,7 +28,6 @@ $LANG = Array(
     //Error messages
     "ERROR_MSG" => "Ошибка",
     "UNKNOWN_ERROR" => "Что-то пошло не так, попробуйте позже",
-    "DB_CONNECTION_ERROR" => "Сбой в работе системы",
     "EMPTY_FIELD" => "Обязательное поле",
     "WRONG_EMAIL" => "Неправильный адрес эл. почты",
     "SHORT_PASSWORD" => "Пароль должен содержать больше 3 символов",
