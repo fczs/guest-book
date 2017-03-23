@@ -3,8 +3,8 @@ if ($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') die(0); //Only ajax r
 require_once($_SERVER["DOCUMENT_ROOT"] . "/engine/Prolog.php");
 
 $error = [];
-$email = $_POST["email"];
-$password = $_POST["password"];
+$email = htmlspecialchars($_POST["email"], ENT_QUOTES);
+$password = htmlspecialchars($_POST["password"], ENT_QUOTES);
 
 if (empty($email)) {
     $error["email"] = $LANG["EMPTY_FIELD"];

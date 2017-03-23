@@ -4,8 +4,8 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/engine/Prolog.php");
 
 $error = [];
 $email = $_POST["email"];
-$messageTitle = $_POST["messageTitle"];
-$messageText = $_POST["messageText"];
+$messageTitle = htmlspecialchars($_POST["messageTitle"], ENT_QUOTES);
+$messageText = htmlspecialchars($_POST["messageText"], ENT_QUOTES);
 
 !empty($messageTitle) or $error["messageTitle"] = $LANG["EMPTY_FIELD"];
 !empty($messageText) or $error["messageText"] = $LANG["EMPTY_FIELD"];

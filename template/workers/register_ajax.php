@@ -3,11 +3,11 @@ if ($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') die(0); //Only ajax r
 require_once($_SERVER["DOCUMENT_ROOT"] . "/engine/Prolog.php");
 
 $error = [];
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password1 = $_POST["password1"];
-$password2 = $_POST["password2"];
-$keystring = $_POST["keystring"];
+$name = htmlspecialchars($_POST["name"], ENT_QUOTES);
+$email = htmlspecialchars($_POST["email"], ENT_QUOTES);
+$password1 = htmlspecialchars($_POST["password1"], ENT_QUOTES);
+$password2 = htmlspecialchars($_POST["password2"], ENT_QUOTES);
+$keystring = htmlspecialchars($_POST["keystring"], ENT_QUOTES);
 
 !empty($name) or $error["name"] = $LANG["EMPTY_FIELD"];
 
